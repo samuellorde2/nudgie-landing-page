@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nudgie - ADHD-Friendly AI Task Assistant</title>
+    <meta name="description" content="Nudgie helps you manage messy thoughts and tasks, prioritize effectively, and stay focused with an empathetic AI companion.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        .text-gradient {
+            background: linear-gradient(90deg, #8b5cf6, #ec4899, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% 200%;
+            animation: gradient-shift 4s ease-in-out infinite;
+        }
+        
+        @keyframes gradient-shift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        .bounce-gentle {
+            animation: bounce-gentle 3s infinite;
+        }
+        
+        @keyframes bounce-gentle {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        
+        .subtle-float {
+            animation: subtle-float 6s ease-in-out infinite;
+        }
+        
+        @keyframes subtle-float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+        
+        .fun-border {
+            background: linear-gradient(135deg, #8b5cf6, #ec4899, #f59e0b);
+            border-radius: 12px;
+            padding: 2px;
+        }
+        
+        .fun-border > * {
+            background: white;
+            border-radius: 10px;
+            padding: 12px 24px;
+            color: #7c3aed;
+            font-weight: 600;
+        }
+        
+        .fun-border:hover > * {
+            background: #f8fafc;
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-50 via-purple-50 to-amber-50 font-sans">
+
+  <!-- Header -->
+  <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-lg py-4 px-6 flex justify-between items-center">
+    <a href="/" class="flex items-center space-x-3 group">
+      <img src="logo.png" alt="Nudgie Logo" class="h-12 w-12 bounce-gentle group-hover:scale-105 transition-transform duration-300">
+      <span class="font-bold text-2xl text-gradient">Nudgie</span>
+    </a>
+    <nav class="hidden md:flex space-x-6">
+      <a href="#features" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-200">Features</a>
+      <a href="#signup" class="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-200">Join Waitlist</a>
+    </nav>
+    <a href="#signup" class="hidden md:inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 px-6 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl">Join Waitlist</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative flex items-center justify-center min-h-screen pt-24 bg-gradient-to-b from-slate-50 via-purple-50 to-amber-50 overflow-hidden">
+    <!-- Subtle floating elements -->
+    <div class="absolute inset-0 pointer-events-none">
+      <div class="absolute top-20 left-10 w-2 h-2 bg-purple-300 rounded-full subtle-float opacity-60"></div>
+      <div class="absolute top-40 right-20 w-3 h-3 bg-pink-300 rounded-full subtle-float opacity-60" style="animation-delay: 2s;"></div>
+      <div class="absolute bottom-40 left-20 w-2 h-2 bg-amber-300 rounded-full subtle-float opacity-60" style="animation-delay: 4s;"></div>
+      <div class="absolute bottom-20 right-10 w-3 h-3 bg-purple-300 rounded-full subtle-float opacity-60" style="animation-delay: 1s;"></div>
+    </div>
+    
+    <div class="text-center max-w-4xl px-4 relative z-10">
+      <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+        Your brain's new <span class="text-gradient">best friend</span>
+      </h1>
+      <p class="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+        Nudgie is your ADHD-friendly AI companion that actually gets how your brain works. Chat, chunk tasks, and stay focused without the overwhelm. No more brain chaos!
+      </p>
+      <a href="#signup" class="inline-block bg-gradient-to-r from-purple-600 via-pink-600 to-amber-600 text-white py-4 px-10 rounded-lg text-xl font-bold hover:from-purple-700 hover:via-pink-700 hover:to-amber-700 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105">Join Waitlist & Get Organized</a>
+      <div class="mt-8 text-gray-600 text-lg font-medium">Join 400+ early adopters who've finally found their brain's missing piece</div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20 bg-white/60 backdrop-blur-sm">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center mb-16 text-gradient">Features That Actually Work (Promise!)</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <!-- Feature 1 -->
+        <div class="text-center p-8 bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-purple-100">
+          <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-3 text-purple-800">AI Chat That Gets You</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Chat with Nudgie like you're talking to a friend who actually understands ADHD. Create tasks, get suggestions, and stay motivated through conversation.
+          </p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="text-center p-8 bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-amber-100">
+          <div class="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-3 text-amber-800">Task Chunking Magic</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Big, scary tasks? Nudgie breaks them into bite-sized steps that won't make your brain panic. One step at a time, friend!
+          </p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="text-center p-8 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-blue-100">
+          <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-3 text-blue-800">Pomodoro Timer</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Built-in focus timer that actually works with your ADHD brain. Work for 25 minutes, break for 5, and watch your productivity soar.
+          </p>
+        </div>
+        <!-- Feature 4 -->
+        <div class="text-center p-8 bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-green-100">
+          <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-3 text-green-800">Voice-to-Task</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Talk to Nudgie and watch your rambling thoughts turn into organized tasks. Perfect for when typing feels like climbing Everest.
+          </p>
+        </div>
+        <!-- Feature 5 -->
+        <div class="text-center p-8 bg-gradient-to-br from-pink-50 to-rose-50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-pink-100">
+          <div class="w-16 h-16 bg-gradient-to-br from-pink-500 to-rose-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-3 text-pink-800">Focus Noise</h3>
+          <p class="text-gray-600 leading-relaxed">
+            White, pink, or brown noise that actually helps you focus. No more random YouTube videos playing in the background!
+          </p>
+        </div>
+        <!-- Feature 6 -->
+        <div class="text-center p-8 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-indigo-100">
+          <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-3 text-indigo-800">Mood & Progress Tracking</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Track your mood, celebrate wins, and see your progress over time. Because sometimes you need to remember you're actually doing great.
+          </p>
+        </div>
+        <!-- Feature 7 -->
+        <div class="text-center p-8 bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-yellow-100">
+          <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-3 text-yellow-800">Live Activities</h3>
+          <p class="text-gray-600 leading-relaxed">
+            iOS lock screen integration so you can see your current task without unlocking your phone. Because we know you'll forget what you're doing.
+          </p>
+        </div>
+        <!-- Feature 8 -->
+        <div class="text-center p-8 bg-gradient-to-br from-teal-50 to-cyan-50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-teal-100">
+          <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-cyan-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-3 text-teal-800">ADHD Nudge System</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Gentle reminders that actually help instead of stressing you out. Nudgie knows when to nudge and when to let you breathe.
+          </p>
+        </div>
+        <!-- Feature 9 -->
+        <div class="text-center p-8 bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-red-100">
+          <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-pink-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-3 text-red-800">Personal Journal</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Built-in journaling to track your thoughts, wins, and struggles. Because sometimes you need to see how far you've come.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Waitlist Signup -->
+  <section id="signup" class="py-20 bg-gradient-to-br from-slate-100 via-purple-100 to-amber-100">
+    <div class="max-w-2xl mx-auto px-6 text-center">
+      <h2 class="text-5xl font-bold mb-6 text-gradient">Join the Nudgie Waitlist</h2>
+      <p class="text-gray-700 mb-8 text-lg">Be the first to try Nudgie and finally get your brain organized. Your future focused self will thank you (and probably send you a thank you note).</p>
+      <div id="mc_embed_shell">
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+          #mc_embed_signup{background:transparent; clear:left; font:14px Helvetica,Arial,sans-serif; width: 100%; max-width: 600px; margin: 0 auto;}
+          #mc_embed_signup .mc-field-group { margin-bottom: 1rem; }
+          #mc_embed_signup label { display: block; margin-bottom: 0.5rem; color: #374151; font-weight: 600; }
+          #mc_embed_signup input[type="email"] { width: 100%; padding: 1rem; border: 2px solid #e5e7eb; border-radius: 0.5rem; font-size: 1rem; }
+          #mc_embed_signup input[type="submit"] { background: linear-gradient(to right, #9333ea, #ec4899); color: white; padding: 1rem 2rem; border: none; border-radius: 0.5rem; font-weight: 600; font-size: 1rem; cursor: pointer; transition: all 0.3s ease; }
+          #mc_embed_signup input[type="submit"]:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
+          #mc_embed_signup h2 { color: #7c3aed; margin-bottom: 1rem; }
+          #mc_embed_signup .indicates-required { color: #6b7280; font-size: 0.875rem; margin-bottom: 1rem; }
+        </style>
+        <div id="mc_embed_signup">
+          <form action="https://gmail.us10.list-manage.com/subscribe/post?u=f642e7a152175c38a6bd1260e&amp;id=91558db7a9&amp;f_id=00cd66e2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self" novalidate="">
+            <div id="mc_embed_signup_scroll"><h2>Subscribe</h2>
+                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>
+            <div id="mce-responses" class="clear foot">
+                <div class="response" id="mce-error-response" style="display: none;"></div>
+                <div class="response" id="mce-success-response" style="display: none;"></div>
+            </div>
+        <div aria-hidden="true" style="position: absolute; left: -5000px;">
+            /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+            <input type="text" name="b_f642e7a152175c38a6bd1260e_91558db7a9" tabindex="-1" value="">
+        </div>
+            <div class="optionalParent">
+                <div class="clear foot">
+                    <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                    <p style="margin: 0px auto;"><a href="http://eepurl.com/jmlFb6" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
+                </div>
+            </div>
+        </div>
+          </form>
+        </div>
+        <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+        <script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';fnames[6]='COMPANY';ftypes[6]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+      </div>
+      <p class="mt-4 text-sm text-gray-600">No spam, just updates about your new favorite brain buddy. Pinky promise!</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white/80 backdrop-blur-sm py-8 mt-12 text-center text-gray-600 border-t border-purple-100">
+    <div class="max-w-4xl mx-auto px-6">
+      <p class="text-lg">&copy; 2025 Nudgie. All rights reserved. Made with care (and lots of coffee) for the ADHD community.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
