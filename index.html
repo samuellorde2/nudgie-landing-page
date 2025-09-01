@@ -221,42 +221,106 @@
     <div class="max-w-2xl mx-auto px-6 text-center">
       <h2 class="text-5xl font-bold mb-6 text-gradient">Join the Nudgie Waitlist</h2>
       <p class="text-gray-700 mb-8 text-lg">Be the first to try Nudgie and finally get your brain organized. Your future focused self will thank you (and probably send you a thank you note).</p>
-      <div id="mc_embed_shell">
-        <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
-        <style type="text/css">
-          #mc_embed_signup{background:transparent; clear:left; font:14px Helvetica,Arial,sans-serif; width: 100%; max-width: 600px; margin: 0 auto;}
-          #mc_embed_signup .mc-field-group { margin-bottom: 1rem; }
-          #mc_embed_signup label { display: block; margin-bottom: 0.5rem; color: #374151; font-weight: 600; }
-          #mc_embed_signup input[type="email"] { width: 100%; padding: 1rem; border: 2px solid #e5e7eb; border-radius: 0.5rem; font-size: 1rem; }
-          #mc_embed_signup input[type="submit"] { background: linear-gradient(to right, #9333ea, #ec4899); color: white; padding: 1rem 2rem; border: none; border-radius: 0.5rem; font-weight: 600; font-size: 1rem; cursor: pointer; transition: all 0.3s ease; }
-          #mc_embed_signup input[type="submit"]:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
-          #mc_embed_signup h2 { color: #7c3aed; margin-bottom: 1rem; }
-          #mc_embed_signup .indicates-required { color: #6b7280; font-size: 0.875rem; margin-bottom: 1rem; }
+      <div id="mc_embed_shell" class="max-w-md mx-auto">
+        <style>
+          #mc_embed_signup {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border: 2px solid #e5e7eb;
+          }
+          #mc_embed_signup .mc-field-group {
+            margin-bottom: 1.5rem;
+          }
+          #mc_embed_signup label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #374151;
+            font-weight: 600;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+          }
+          #mc_embed_signup input[type="email"] {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: #f9fafb;
+          }
+          #mc_embed_signup input[type="email"]:focus {
+            outline: none;
+            border-color: #8b5cf6;
+            background: white;
+            box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+          }
+          #mc_embed_signup input[type="submit"] {
+            background: linear-gradient(135deg, #8b5cf6, #ec4899);
+            color: white;
+            padding: 0.875rem 2rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+          }
+          #mc_embed_signup input[type="submit"]:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(139, 92, 246, 0.3);
+            background: linear-gradient(135deg, #7c3aed, #db2777);
+          }
+          #mc_embed_signup input[type="submit"]:active {
+            transform: translateY(0);
+          }
+          #mc_embed_signup .refferal_badge {
+            margin-top: 1rem;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+          }
+          #mc_embed_signup .refferal_badge:hover {
+            opacity: 1;
+          }
         </style>
+        
         <div id="mc_embed_signup">
           <form action="https://gmail.us10.list-manage.com/subscribe/post?u=f642e7a152175c38a6bd1260e&amp;id=91558db7a9&amp;f_id=00cd66e2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self" novalidate="">
-            <div id="mc_embed_signup_scroll"><h2>Subscribe</h2>
-                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>
-            <div id="mce-responses" class="clear foot">
+            <div id="mc_embed_signup_scroll">
+              <div class="mc-field-group">
+                <label for="mce-EMAIL">Email Address</label>
+                <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" placeholder="Enter your email address">
+              </div>
+              
+              <div id="mce-responses" class="clear foot">
                 <div class="response" id="mce-error-response" style="display: none;"></div>
                 <div class="response" id="mce-success-response" style="display: none;"></div>
-            </div>
-        <div aria-hidden="true" style="position: absolute; left: -5000px;">
-            /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
-            <input type="text" name="b_f642e7a152175c38a6bd1260e_91558db7a9" tabindex="-1" value="">
-        </div>
-            <div class="optionalParent">
+              </div>
+              
+              <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                <input type="text" name="b_f642e7a152175c38a6bd1260e_91558db7a9" tabindex="-1" value="">
+              </div>
+              
+              <div class="optionalParent">
                 <div class="clear foot">
-                    <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-                    <p style="margin: 0px auto;"><a href="http://eepurl.com/jmlFb6" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
+                  <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Join Waitlist">
+                  <p style="margin: 1rem auto 0; text-align: center;">
+                    <a href="http://eepurl.com/jmlFb6" title="Mailchimp - email marketing made easy and fun">
+                      <span style="display: inline-block; background-color: transparent; border-radius: 4px;">
+                        <img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;">
+                      </span>
+                    </a>
+                  </p>
                 </div>
+              </div>
             </div>
-        </div>
           </form>
         </div>
-        <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-        <script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';fnames[6]='COMPANY';ftypes[6]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
       </div>
       <p class="mt-4 text-sm text-gray-600">No spam, just updates about your new favorite brain buddy. Pinky promise!</p>
     </div>
